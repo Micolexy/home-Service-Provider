@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>ProConnect</title>
+  </head>
+  <body class="font-sans">
+    <!-- first section -->
+    <section class="bg-creamColor">
+      <div class="mx-auto p-10">
+        <!-- header and menu -->
+        <header class="flex flex-row justify-between items-center mb-8">
+          <!-- logo -->
+          <h1 class="font-semibold text-3xl">ProConnect</h1>
+          <!-- menu -->
+          <div class="hidden lg:flex space-x-16 items-center">
+            <a
+              href="#"
+              class="text-xl font-light hover:text-lightGreen hover:border-b hover:border-b-lightGreen"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-xl font-light hover:text-lightGreen hover:border-b hover:border-b-lightGreen"
+              >About us</a
+            >
+            <a
+              href="#service"
+              class="text-xl font-light hover:text-lightGreen hover:border-b hover:border-b-lightGreen"
+              >Services</a
+            >
+            <a
+              href="#faq"
+              class="text-xl font-light hover:text-lightGreen hover:border-b hover:border-b-lightGreen"
+              >Contact us</a
+            >
+          </div>
+
+          <!-- get started -->
+          <a
+            href="#"
+            class="hidden lg:flex bg-black text-white px-10 py-5 rounded-full text-xl duration-150 transition hover:scale-90 hover:bg-lightGreen"
+          >
+            Get Started
+          </a>
+          <!-- menu button -->
+          <div class="lg:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block menu lg:hidden focus:outline-none"
+            >
+              <span class="menu-top"></span>
+              <span class="menu-middle"></span>
+              <span class="menu-bottom"></span>
+            </button>
+          </div>
+        </header>
+        <!-- mobile menu -->
+        <div
+          id="menu"
+          class="z-20 fixed lg:hidden top-0 bottom-0 right-0 w-56 h-60 pb-3 py-1 pt-10 opacity-70 bg-black tracking-widest rounded-md transition-transform duration-500 transform translate-x-full"
+        >
+          <div class="flex font-sans pl-5 flex-col space-y-4 text-white">
+            <a href="#" class="text-md font-light hover:text-lightGreen"
+              >Home</a
+            >
+            <a href="#about" class="text-md font-light hover:text-lightGreen"
+              >About us</a
+            >
+            <a href="#service" class="text-md font-light hover:text-lightGreen"
+              >Services</a
+            >
+            <a href="#faq" class="text-md font-light hover:text-lightGreen"
+              >Contact us</a
+            >
+            <a href="#" class="text-xl font-light hover:text-lightGreen"
+              >Get Started</a
+            >
+          </div>
+        </div>
+        <!-- text and header image -->
+        <div
+          class="w-full flex flex-col lg:flex-row items-center justify-between space-y-10 lg:space-y-0"
+        >
+          <div class="text-start lg:w-1/2">
+            <h2
+              class="mb-5 text-2xl lg:text-4xl capitalize font-bold tracking-wider leading-10 lg:leading-relaxed"
+            >
+              connect you with skilled
+              <span class="text-lightGreen">professionals</span>
+              for all your home service needs.
+            </h2>
+            <p class="opacity-60 leading-8">
+              Lorem ipsum dolor sit amet consectetur. Egestas pellentesque eu
+              pellentesque tortor ligula. Ullamcorper fermentum tincidunt
+              accumsan lacus nulla. Adipiscing at egestas massa egestas egestas.
+              Libero in risus libero potenti.
+            </p>
+          </div>
+          <div class="lg:w-1/2">
+            <img src="img/heaader-img.png" alt="" />
+          </div>
+        </div>
+        <!-- get our service -->
+        <div class="bg-white rounded-xl lg:rounded-full px-3 py-4">
+          <div
+            class="capitalize flex flex-col items-center justify-between lg:flex-row space-y-10 lg:space-y-0 lg:space-x-12"
+          >
+            <h4 class="font-semibold tracking-wider text-xl">
+              Get our services
+            </h4>
+            <!-- service type -->
+            <div class="flex space-x-3 items-center cursor-pointer">
+              <p class="opacity-60">service type</p>
+              <div>
+                <img src="img/arrow-down.png" alt="" />
+              </div>
+            </div>
+            <!-- date -->
+            <div class="flex space-x-3 items-center cursor-pointer">
+              <p class="opacity-60">select date</p>
+              <div>
+                <img src="img/date-icon.png" alt="" />
+              </div>
+            </div>
+            <!-- time -->
+            <div class="flex space-x-3 items-center cursor-pointer">
+              <p class="opacity-60">select time</p>
+              <div>
+                <img src="img/time-icon.png" alt="" />
+              </div>
+            </div>
+            <!-- book service -->
+            <a
+              href="#"
+              class="bg-lightYellow px-10 py-5 rounded-full text-sm duration-500 transition hover:scale-90 hover:bg-lightGreen"
+            >
+              Book service
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- second section -->
+    <section id="about">
+      <div class="mx-auto p-10">
+        <div
+          class="w-full flex flex-col-reverse lg:flex-row items-start lg:space-x-10"
+        >
+          <div class="lg:w-1/2">
+            <img src="img/work-img.jfif" class="rounded-md" alt="" />
+          </div>
+          <div class="lg:w-1/2 mb-10">
+            <h3
+              class="text-2xl font-semibold capitalize mb-5 text-center lg:text-start"
+            >
+              who we are
+            </h3>
+            <p class="opacity-50 mb-5 leading-7">
+              At ProConnect, we understand the importance of finding the right
+              home service professionals for your unique needs. Whether it's a
+              plumber, electrician, painter, or any other service, our platform
+              is designed to simplify the process of connecting you with
+              top-tier professionals who are not only qualified but also
+              dedicated to delivering exceptional service.
+            </p>
+            <p class="opacity-50 mb-8 leading-7">
+              At ProConnect, we understand the importance of finding the right
+              home service professionals for your unique needs. Whether it's a
+              plumber, electrician, painter, or any other service.
+            </p>
+            <div
+              class="mb-10 flex flex-col md:flex-row space-y-6 md:space-y-0 items-ce justify-between text-lg"
+            >
+              <!-- happy client -->
+              <div class="flex flex-col space-y-0.5 text-lightGreen">
+                <p class="">500+</p>
+                <span class="capitalize"> happy clients </span>
+              </div>
+              <!-- project complete -->
+              <div class="flex flex-col space-y-0.5 text-lightGreen">
+                <p class="">2000+</p>
+                <span class="capitalize"> projects conpleted </span>
+              </div>
+              <!-- qualified -->
+              <div class="flex flex-col space-y-0.5 text-lightGreen">
+                <p class="">100+</p>
+                <span class="capitalize"> qualified professionals </span>
+              </div>
+            </div>
+            <!-- read more -->
+            <a
+              href="#"
+              class="bg-lightYellow px-16 py-5 rounded-full text-lg duration-500 transition hover:scale-90 hover:bg-lightGreen"
+            >
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- third section- our service -->
+    <section id="service">
+      <div class="mx-auto p-10">
+        <!-- our service -->
+        <div class="flex flex-col items-center relative mb-7">
+          <div
+            class="border-2 border-borderGreen px-20 lg:px-40 lg:py-10 py-8 text-center"
+          >
+            <h2 class="font-semibold text-xl capitalize">our services</h2>
+          </div>
+          <span
+            class="bg-white absolute -bottom-3 px-5 capitalize text-center text-lightPink text-lg"
+          >
+            what we do
+          </span>
+        </div>
+        <!-- sub header -->
+        <p
+          class="mb-10 opacity-60 leading-7 text-start md:text-center mx-auto max-w-3xl"
+        >
+          Looking for reliable service provider? Look no further than
+          proconnect, the ultimate platform for connecting customers with
+          top-notch professionals. With our cutting-edge technology and
+          extensive vetting process, we ensure that only the best professionals
+          join our platform. Proconnect provides a wide range of services to
+          meet every customers unique needs
+        </p>
+        <!-- grid container -->
+        <div
+          class="grid gap-4 lg:gap-8 md:grid-cols-3 lg:grid-cols-4 text-center"
+        >
+          <!-- plumbimg service container -->
+          <div
+            class="border flex flex-col items-center space-y-2 border-opacity-10 mx-auto px-6 py-6"
+          >
+            <div class="">
+              <img src="img/icon1.png" alt="" />
+            </div>
+            <h3 class="font-semibold text-lg capitalize tracking-wider">
+              plumbing services
+            </h3>
+            <p class="opacity-60 text-center max-w-xs leading-6">
+              Our expert plumbers provide fast and efficient leak repairs to
+              prevent water damage and reduce your utility bills. We address
+              leaks in pipes, faucets, toilets, and more, ensuring your plumbing
+              system runs smoothly.
+            </p>
+          </div>
+          <!-- tiling service container -->
+          <div
+            class="border flex flex-col items-center space-y-2 border-opacity-10 mx-auto px-6 py-6"
+          >
+            <div class="">
+              <img src="img/tiling-icon 1.png" alt="" />
+            </div>
+            <h3 class="font-semibold text-lg capitalize tracking-wider">
+              tiling services
+            </h3>
+            <p class="opacity-60 text-center max-w-xs leading-6">
+              Protect your home year-round with our preventative pest control
+              services. We offer regular treatments that keep pests at bay,
+              ensuring your home remains comfortable and safe.
+            </p>
+          </div>
+          <!-- masonry service container -->
+          <div
+            class="border flex flex-col items-center space-y-2 border-opacity-10 mx-auto px-6 py-6"
+          >
+            <div class="">
+              <img src="img/icon3.png" alt="" />
+            </div>
+            <h3 class="font-semibold text-lg capitalize tracking-wider">
+              masonry services
+            </h3>
+            <p class="opacity-60 text-center max-w-xs leading-6">
+              Our expert plumbers provide fast and efficient leak repairs to
+              prevent water damage and reduce your utility bills. We address
+              leaks in pipes, faucets, toilets, and more, ensuring your plumbing
+              system runs smoothly.
+            </p>
+          </div>
+          <!-- electical service container -->
+          <div
+            class="border flex flex-col items-center space-y-2 border-opacity-10 mx-auto px-6 py-6"
+          >
+            <div class="">
+              <img src="img/icon5.png" alt="" />
+            </div>
+            <h3 class="font-semibold text-lg capitalize tracking-wider">
+              electrical services
+            </h3>
+            <p class="opacity-60 text-center max-w-xs leading-6">
+              Whether you're building new or updating old wiring, our licensed
+              electricians provide safe and reliable wiring and rewiring
+              services. We ensure your home meets all electrical safety
+              standards.
+            </p>
+          </div>
+          <!-- carpentry service container -->
+          <div
+            class="border flex flex-col items-center space-y-2 border-opacity-10 mx-auto px-6 py-6"
+          >
+            <div class="">
+              <img src="img/icon7.png" alt="" />
+            </div>
+            <h3 class="font-semibold text-lg capitalize tracking-wider">
+              carpentry services
+            </h3>
+            <p class="opacity-60 text-center max-w-xs leading-6">
+              Our deep cleaning services target those often-neglected areas of
+              your home, providing a thorough clean that leaves your space
+              looking and feeling rejuvenated. We use safe and effective
+              methods.
+            </p>
+          </div>
+          <!-- wielding service container -->
+          <div
+            class="border flex flex-col items-center space-y-2 border-opacity-10 mx-auto px-6 py-6"
+          >
+            <div class="">
+              <img src="img/welding-circle 1.png" alt="" />
+            </div>
+            <h3 class="font-semibold text-lg capitalize tracking-wider">
+              wielding services
+            </h3>
+            <p class="opacity-60 text-center max-w-xs leading-6">
+              Our handyman services cover a wide range of minor home repairs,
+              from fixing leaky faucets to patching drywall. We provide prompt
+              and reliable service to keep your home in top condition.
+            </p>
+          </div>
+          <!-- painting service container -->
+          <div
+            class="border flex flex-col items-center space-y-2 border-opacity-10 mx-auto px-6 py-6"
+          >
+            <div class="">
+              <img src="img/icon6.png" alt="" />
+            </div>
+            <h3 class="font-semibold text-lg capitalize tracking-wider">
+              painting services
+            </h3>
+            <p class="opacity-60 text-center max-w-xs leading-6">
+              Refresh your home’s look with our professional painting services.
+              We offer high-quality interior and exterior painting, using
+              premium materials for a long-lasting finish. we restore your walls
+              to perfect condition,
+            </p>
+          </div>
+          <!-- electrric service container -->
+          <div
+            class="border flex flex-col items-center space-y-2 border-opacity-10 mx-auto px-6 py-6"
+          >
+            <div class="">
+              <img src="img/icon5.png" alt="" />
+            </div>
+            <h3 class="font-semibold text-lg capitalize tracking-wider">
+              electrical services
+            </h3>
+            <p class="opacity-60 text-center max-w-xs leading-6">
+              Our expert plumbers provide fast and efficient leak repairs to
+              prevent water damage and reduce your utility bills. We address
+              leaks in pipes, faucets, toilets, and more, ensuring your plumbing
+              system runs smoothly.
+            </p>
+          </div>
+          <!-- end of service -->
+        </div>
+      </div>
+    </section>
+    <!-- why choose us section -->
+    <section id="choose" class="bg-bgColor1">
+      <div class="mx-auto p-10">
+        <!-- choose -->
+        <div class="flex flex-col items-center relative mb-7">
+          <div
+            class="border-2 border-borderGreen px-20 py-8 lg:px-40 lg:py-10 text-center"
+          >
+            <h2 class="text-white font-semibold text-xl capitalize">
+              why choose us
+            </h2>
+          </div>
+          <span
+            class="bg-bgColor1 absolute -bottom-3 px-5 capitalize text-center text-lightPink text-lg"
+          >
+            benefits
+          </span>
+        </div>
+        <!-- sub header -->
+        <p
+          class="text-white mb-10 opacity-60 leading-7 text-start md:text-center mx-auto max-w-3xl"
+        >
+          Looking for reliable service provider? Look no further than
+          proconnect, the ultimate platform for connecting customers with
+          top-notch professionals. With our cutting-edge technology and
+          extensive vetting process, we ensure that only the best professionals
+          join our platform. Proconnect provides a wide range of services to
+          meet every customers unique needs
+        </p>
+        <!-- grid-box container -->
+        <div class="grid gap-6 lg:grid-cols-4 md:grid-cols-2">
+          <!-- years container -->
+          <div
+            class="bg-white text-center border flex flex-col items-center space-y-3 mx-auto px-6 py-10"
+          >
+            <div class="bg-purple-500 p-3 rounded-full">
+              <img src="img/award-line.png" alt="" />
+            </div>
+            <h3 class="text-lg">Over 5 years of service</h3>
+            <p class="opacity-60 text-center max-w-xs leading-6">
+              With over a decade of experience as a service provider, we have
+              honed our skills and developed a deep understanding of the
+              industry.
+            </p>
+          </div>
+          <!-- expert container -->
+          <div
+            class="bg-white text-center border flex flex-col items-center space-y-3 mx-auto px-6 py-10"
+          >
+            <div class="bg-lightGreen p-3 rounded-full">
+              <img src="img/group-line.png" alt="" />
+            </div>
+            <h3 class="text-lg">Expert employee</h3>
+            <p class="opacity-60 text-center max-w-xs leading-6">
+              With over a decade of experience as a service provider, we have
+              honed our skills and developed a deep understanding of the
+              industry.
+            </p>
+          </div>
+          <!-- price container -->
+          <div
+            class="bg-white text-center border flex flex-col items-center space-y-3 mx-auto px-6 py-10"
+          >
+            <div class="bg-black p-3 rounded-full">
+              <img src="img/money-dollar-circle-line.png" alt="" />
+            </div>
+            <h3 class="text-lg">Comfortable price</h3>
+            <p class="opacity-60 text-center max-w-xs leading-6">
+              Our service provider offers exceptional quality at a comfortable
+              price, ensuring affordability without compromising on
+              satisfaction.
+            </p>
+          </div>
+          <!-- work done container -->
+          <div
+            class="bg-white text-center border flex flex-col items-center space-y-3 mx-auto px-6 py-10"
+          >
+            <div class="bg-yellow-500 p-3 rounded-full">
+              <img src="img/Group.png" alt="" />
+            </div>
+            <h3 class="text-lg">Work done on time</h3>
+            <p class="opacity-60 text-center max-w-xs leading-6">
+              With over a decade of experience as a service provider, we have
+              honed our skills and developed a deep understanding of the
+              industry.
+            </p>
+          </div>
+          <!-- end of container -->
+        </div>
+      </div>
+    </section>
+    <!-- our project section -->
+    <section id="project" class="">
+      <div class="mx-auto p-10">
+        <!-- our project -->
+        <div class="flex flex-col items-center relative mb-7">
+          <div
+            class="border-2 border-borderGreen px-24 lg:px-40 lg:py-10 py-8 text-center"
+          >
+            <h2 class="font-semibold text-xl capitalize">our projects</h2>
+          </div>
+          <span
+            class="bg-white absolute -bottom-3 px-5 capitalize text-center text-lightPink text-lg"
+          >
+            what we have done
+          </span>
+        </div>
+        <!-- sub header -->
+        <p class="mb-10 opacity-60 text-center mx-auto max-w-3xl capitalize">
+          We are experts at what we do and we do it fast and better.
+        </p>
+        <!-- images -->
+        <div class="grid gap-4 md:grid-cols-4 mb-5">
+          <!-- image1 -->
+          <div class="relative">
+            <div
+              onclick=""
+              class="hidden lg:flex absolute top-28 bg-white p-5 ml-4 cursor-pointer"
+            >
+              <img src="img/Arrow - Left 2.png" alt="" />
+            </div>
+            <img src="img/ceiling-pop.jfif" class="h-72 md:w-80 w-96" alt="" />
+          </div>
+          <!-- image2 -->
+          <div class="">
+            <img src="img/worker-1.png" class="h-72 md:w-80 w-96" alt="" />
+          </div>
+          <!-- image3 -->
+          <div class="">
+            <img src="img/worekr-2.png" class="h-72 md:w-80 w-96" alt="" />
+          </div>
+          <!-- image4 -->
+          <div class="relative">
+            <div
+              onclick=""
+              class="hidden lg:flex absolute right-0 top-28 bg-white p-5 mr-4 cursor-pointer"
+            >
+              <img src="img/Arrow - Right 2.png" alt="" />
+            </div>
+            <img src="img/worker-3.jfif" class="h-72 md:w-80 w-96" alt="" />
+          </div>
+          <!-- end of image -->
+        </div>
+      </div>
+    </section>
+    <!-- testimonials section -->
+    <section id="testimonial" class="bg-bgColor2">
+      <div class="mx-auto p-10">
+        <!-- our project -->
+        <div class="flex flex-col items-center relative mb-7">
+          <div
+            class="border-2 border-borderGreen px-24 lg:px-40 lg:py-10 py-8 text-center"
+          >
+            <h2 class="font-semibold text-xl capitalize">testimonials</h2>
+          </div>
+          <span
+            class="bg-bgColor2 absolute -bottom-3 px-5 capitalize text-center text-lightPink text-lg"
+          >
+            what our clients says
+          </span>
+        </div>
+        <!-- testimonial -->
+        <div class="flex flex-col items-center space-y-10">
+          <!-- ceo container -->
+          <div
+            class="bg-white shadow-2xl p-5 pb-10 mx-auto flex flex-col items-center md:items-start md:flex-row space-y-8 md:space-y-0 md:space-x-10"
+          >
+            <div class="">
+              <img src="img/ceo-img.png" alt="" />
+            </div>
+            <div class="flex flex-col space-y-10">
+              <p class="opacity-60 max-w-sm">
+                “Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat.”
+              </p>
+              <div class="">
+                <h3 class="text-lg">John Bosco</h3>
+                <span class="font-light text-sm"> CEO Raum </span>
+              </div>
+            </div>
+          </div>
+          <!-- acccountant and hr container -->
+          <div
+            class="flex flex-col items-center justify-between md:flex-row space-y-10 md:space-y-0 md:space-x-10"
+          >
+            <!-- accountant container -->
+            <div
+              class="max-w-3xl shadow-2xl bg-white px-6 py-5 pb-10 mx-auto flex flex-col items-start space-y-10"
+            >
+              <p class="opacity-60 max-w-sm">
+                “Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat.”
+              </p>
+              <div class="flex items-center space-x-5">
+                <img src="img/accountant-img.png" class="w-20 h-20" alt="" />
+                <div class="flex flex-col space-y-1">
+                  <h3 class="text-sm">Molume Okolosi</h3>
+                  <p class="opacity-60 text-xs">Accountant Cognith</p>
+                </div>
+              </div>
+            </div>
+            <!-- hr container -->
+            <div
+              class="max-w-3xl shadow-2xl bg-white px-6 py-5 pb-10 mx-auto flex flex-col items-start space-y-10"
+            >
+              <p class="opacity-60 max-w-sm">
+                “Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat.”
+              </p>
+              <div class="flex items-center space-x-5">
+                <img src="img/hr-img.png" class="w-20 h-20" alt="" />
+                <div class="flex flex-col space-y-1">
+                  <h3 class="text-sm">Felicia Ogunmepo</h3>
+                  <p class="opacity-60 text-xs">HR OOPL</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ section -->
+    <section id="faq">
+      <div class="mx-auto p-10 pb-16">
+        <!-- faq -->
+        <div class="flex flex-col items-center relative mb-7">
+          <div
+            class="border-2 border-borderGreen px-28 lg:px-40 lg:py-10 py-8 text-center"
+          >
+            <h2 class="font-semibold text-xl capitalize">testimonials</h2>
+          </div>
+          <span
+            class="bg-white absolute -bottom-3 px-3 capitalize text-center text-lightPink text-lg"
+          >
+            everything you need to know
+          </span>
+        </div>
+        <!-- question container -->
+        <div class="md:px-10 py-5">
+          <!-- first question -->
+          <div
+            class="md:px-2 pt-6 mb-10 flex justify-between items-center border-t-2"
+          >
+            <a href="#" class="tracking-wider text-sm">
+              Can i change my plan later?
+            </a>
+            <a href="#" class="">
+              <img src="img/plus-icon.png" alt="" />
+            </a>
+          </div>
+          <!-- second question -->
+          <div
+            class="md:px-2 pt-6 mb-10 flex justify-between items-center border-t-2"
+          >
+            <a href="#" class="tracking-wider text-sm">
+              What is your cancellation policy?
+            </a>
+            <a href="#" class="">
+              <img src="img/plus-icon.png" alt="" />
+            </a>
+          </div>
+          <!-- third question -->
+          <div
+            class="md:px-2 pt-6 mb-10 flex justify-between items-center border-t-2"
+          >
+            <a href="#" class="tracking-wider text-sm">
+              Can other info be added to an invoice?
+            </a>
+            <a href="#" class="">
+              <img src="img/plus-icon.png" alt="" />
+            </a>
+          </div>
+          <!-- fourth question -->
+          <div
+            class="md:px-2 pt-6 mb-10 flex justify-between items-center border-t-2"
+          >
+            <a href="#" class="tracking-wider text-sm">
+              How does billing work?
+            </a>
+            <a href="#" class="">
+              <img src="img/plus-icon.png" alt="" />
+            </a>
+          </div>
+          <!-- fifth question -->
+          <div
+            class="md:px-2 pt-6 mb-10 flex justify-between items-center border-t-2"
+          >
+            <a href="#" class="tracking-wider text-sm">
+              How do i change my account email?
+            </a>
+            <a href="#" class="">
+              <img src="img/plus-icon.png" alt="" />
+            </a>
+          </div>
+          <!-- end of question -->
+        </div>
+        <div class="bg-bgColor1 px-10 py-10 rounded-lg">
+          <div class="flex flex-col items-center justify-center space-y-4">
+            <div class="relative flex items-center">
+              <!-- faq image1 -->
+              <div class="absolute -left-8">
+                <img src="img/faq-img3.png" alt="" />
+              </div>
+              <!-- faq image2 -->
+              <div class="absolute -top-3">
+                <img src="img/faq-img1.png" alt="" />
+              </div>
+              <!-- faq image3 -->
+              <div class="ml-10">
+                <img src="img/faq-img2.png" alt="" />
+              </div>
+            </div>
+            <p class="text-white text-lg tracking-widest">
+              Still have questions?
+            </p>
+            <p class="text-white text-sm tracking-wider text-center">
+              Can't find the answer you're looking for? Please chat to our
+              friendly team.
+            </p>
+            <a
+              href="#"
+              class="bg-lightGreen px-10 md:px-16 py-4 rounded-full hover:bg-lightYellow hover:text-black text-white duration-200 transition hover:-translate-y-1.5"
+            >
+              Get In Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our comminity section -->
+    <section id="commmunity" class="bg-bgColor3">
+      <div class="mx-auto p-10 py-16">
+        <h2 class="mb-8 font-semibold text-center text-2xl capitalize">
+          join our community
+        </h2>
+        <p class="mb-10 opacity-60 text-center">
+          Are you a skilled professional in home services, looking to expand
+          your reach and grow your business? Join our vibrant community and
+          connect with homeowners seeking top-notch services!
+        </p>
+        <!-- community image -->
+        <div class="flex justify-center mb-10">
+          <div class="relative">
+            <img src="img/commuinty-img.png" class="w-[600px]" alt="" />
+            <div class="absolute md:-right-14 md:-top-14 -right-7 -top-8">
+              <img src="img/community-arrow.png" class="md:w-32" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- join now -->
+        <div class="flex justify-center">
+          <a
+            href="#"
+            class="bg-bgColor1 capitalize px-20 py-4 rounded-full text-white duration-200 transition hover:-translate-y-1.5 hover:bg-lightPink hover:text-black"
+          >
+            join now
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="p-6 py-10 md:p-16 mx-auto">
+        <!-- footer container -->
+        <div
+          class="flex flex-col lg:flex-row items-start space-y-10 lg:space-y-0 lg:space-x-24"
+        >
+          <!-- logo -->
+          <div class="flex flex-col space-y-7">
+            <h1 class="font-semibold text-2xl">ProConnect</h1>
+            <p class="opacity-60 max-w-md leading-7">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              dictum aliquet accumsan porta lectus ridiculus in mattis. Netus
+              sodales in volutpat ullamcorper amet adipiscing fermentum.
+            </p>
+            <!-- social icon -->
+             <div class="flex space-x-10 items-center">
+              <a href="#"><img src="img/twitter-icon.png"  alt=""></a>
+              <a href="#"><img src="img/facebook-icon.png" alt=""></a>
+              <a href="#"><img src="img/instagram-icon.png" alt=""></a>
+              <a href="#"><img src="img/github-icon.png" alt=""></a>
+             </div>
+          </div>
+          <div class="capitalize flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-16">
+            <!-- company -->
+             <div class="flex flex-col space-y-7">
+              <h4 class="font-semibold text-2xl">
+                Company
+              </h4>
+              <a href="#" class="opacity-60">about</a>
+              <a href="#" class="opacity-60">features</a>
+              <a href="#" class="opacity-60">works</a>
+              <a href="#" class="opacity-60">career</a>
+             </div>
+          <!-- help -->
+          <div class="flex flex-col space-y-7">
+            <h4 class="font-semibold text-2xl">
+              help
+            </h4>
+            <a href="#" class="opacity-60">customer support</a>
+            <a href="#" class="opacity-60">delivery details</a>
+            <a href="#" class="opacity-60">terms & conditions</a>
+            <a href="#" class="opacity-60">privacy policy</a>
+           </div>
+          <!-- resoruces -->
+          <div class="flex flex-col space-y-7">
+            <h4 class="font-semibold text-2xl">
+              resoruces
+            </h4>
+            <a href="#" class="opacity-60">free ebooks</a>
+            <a href="#" class="opacity-60">development tutorials</a>
+            <a href="#" class="opacity-60">how to - blog</a>
+            <a href="#" class="opacity-60">youtube playlist</a>
+           </div>
+          </div>
+        </div>
+        <p class="mt-8 border-t-2 py-3 text-lg text-center">
+          &copy2024 Micolexy. All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
